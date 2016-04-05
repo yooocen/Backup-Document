@@ -1,0 +1,34 @@
+http://www.qt.io/download-open-source/
+在上面的网址下载.run的安装文件
+chmod +x virtualBox-3.1.6-59338-Linux_x86.run
+./virtualbox-3.1.6-59338-Linux_x86.run
+
+出现缺少opengl的解决办法
+1、GL/gl.h: No such file or directory 执行
+2、/usr/bin/ld: cannot find -lGL
+输入下面的命令
+sudo apt-get install mesa-common-dev
+sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev
+
+
+---------------------------------关于配置----------------------------------------------------
+sudo gedit /etc/bash.bashrc
+source /etc/environment
+===============================忽略==========================================================
+#Qt
+export QTDIR=/home/chen/Qt5.6.0/5.6/gcc_64
+export PATH=$QTDIR/bin:$PATH
+export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PAH
+export QMAKESPEC-$QTDIR/mkspecs/linux-g++
+
+alias qtcreator='/home/chen/Qt5.6.0'/Tools/QtCreator/bin/qtcreator
+alias qtdesigner='/home/chen/Qt5.6.0/5.6/gcc_64/bin/designer'
+alias qtassistant='/home/chen/Qt5.6.0/5.6/gcc_64/bin/assistant'
+
+export PATH=./:%PATH
+===============================忽略==========================================================
+
+cd /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/
+在这里加入
+/home/chen/Qt5.6.0/5.6/gcc_64/bin
+/home/chen/Qt5.6.0/5.6/gcc_64
