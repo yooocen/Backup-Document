@@ -1,0 +1,8 @@
+qmake -project "QT += widgets"  生成pro文件
+qmake
+make
+./app
+
+qmake -tp vc hello.pro 创建VS工程文件
+qmake -spec macx-g++ hello.pro 创建对应平台与编译器的makefile文件
+qmake -spec macx-xcode hello.pro 创建Xcode工程文件

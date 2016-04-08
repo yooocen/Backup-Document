@@ -1,0 +1,25 @@
+-----------------------------------------C++------------------------------------------------
+#include <stdlib.h>   -->system
+#include <stdexcept> -->runtime_error
+ctrl+/是注释//
+ctrl+shift+/ 是/× ×/
+再输一次是取消注释
+输入终止符EOF是ctrl +d 这个放在代码那里就是删掉一整行
+ctrl+f6可以切换源文件
+
+××注意想改变实参必须改变别名××
+
+如果你把某些窗口给删了
+window-> perspective-> resetperspective
+
+launch failed.Binary not found问题直接选择project>build all就可以了
+
+头文件丢失
+一般工程那里会有一个include，不知道为什么没有了，重新弄一个helloworld工程就又有了
+
+------------------------------------------java-----------------------------------------------
+
+System.out.println()
+快捷键是syso 然后按alt+/
+
+包名不可以是java之类的

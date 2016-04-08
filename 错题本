@@ -1,0 +1,6 @@
+32位系统指针是4B的
+指针被free以后不会直接赋空值
+
+Item_base(const std::string &book = " ",double sales_price = 0.0):isbn(book),price(sale_price) {}
+
+虚函数必须是基类的非静态函数！！！！！！
