@@ -1,3 +1,11 @@
+------------------------------------terminal------------------------------------
+1.ctrl+a 最左边
+  ctrl+e 最右边
+
+2.Tab补全
+
+3.在指定的目录下打开终端就可以免去cd的痛苦了
+
 ------------------------------------ubuntu---------------------------------------
 1.关于root的权限和用户权限
 sudo su  变成#
@@ -41,5 +49,12 @@ gedit /etc/environment
 
 6.模拟按键输入
   abd shell input keyevent 3 返回主菜单 3=home
+
+--------------------------------apt-get------------------------------------------------
+
+apt-get install xxxx 安装
+apt-get remove xxxx 卸载但不删除配置
+apt-get purge xxxx 卸载并且删除相关配置
+apt-get autoremove --purge xxxxx
  
 

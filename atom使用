@@ -33,3 +33,9 @@ u撤销
 #git-plus 超级吊的一个插件
 通过ctrl+shift+h调出命令窗口
 可以输入add commit 等等
+弄这个之前要弄一个ssh-key 到 github 具体看文档
+
+http://blog.csdn.net/binyao02123202/article/details/20130891
+可以读一下上面的文档 
+
+关于提交失败,可以用 git push origin master
