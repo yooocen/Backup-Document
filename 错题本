@@ -1,6 +1,9 @@
-32位系统指针是4B的
-指针被free以后不会直接赋空值
+1.32位系统指针是4B的
 
-Item_base(const std::string &book = " ",double sales_price = 0.0):isbn(book),price(sale_price) {}
+2.指针被free以后不会直接赋空值
 
-虚函数必须是基类的非静态函数！！！！！！
+3.cin是不可以使用endl的
+
+4.Item_base(const std::string &book = " ",double sales_price = 0.0):isbn(book),price(sale_price) {}
+
+5.虚函数必须是基类的非静态函数！！！！！！
