@@ -13,7 +13,7 @@ sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev
 
 
 ---------------------------------关于配置----------------------------------------------------
-sudo gedit /etc/bash.bashrc
+sudo gedit /etc/bash.bashrc 	
 source /etc/environment
 ===============================忽略==========================================================
 #Qt

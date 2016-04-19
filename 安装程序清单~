@@ -17,3 +17,14 @@
   sudo apt-get install atom
 
 8.Tomcat9.0 下载地址tomcat.apache.org
+
+9.ADB (android debug bridge) 
+  sudo apt-get install android-tools-adb
+
+10.mysql-server
+  sudo apt-get mysql-server
+  配置一下就行了
+
+11.xampp 运行的是run文件 ,安装在/opt/lampp
+
+12.matlab /home/chen/MATLAB/R2016a

@@ -12,14 +12,11 @@ ADT下载地址：https://dl.google.com/android/ADT-23.0.6.zip
 点击help菜单，找到下面的Install New Software并点击之后会弹出一个对话框，然后我们点击add,接下来弹出ADD对话框，然后我们再点击archive按钮。弹出要打开的文件，我们选择我们下载好的ADT，然后打开。然后next 。。finish。。
 
 
-apt-get install xxxx 安装
-apt-get remove xxxx 卸载但不删除配置
-apt-get purge xxxx 卸载并且删除相关配置
 --------------------------------android studio----------------------------------------
 
 官网的做法
-sudo apt-add-repository ppa:paolorotolo/android-studio 
-sudo apt-get update 
+sudo apt-add-repository ppa:paolorotolo/android-studio
+sudo apt-get update
 sudo apt-get install android-studio
 
 
@@ -27,7 +24,7 @@ sudo apt-get install android-studio
 sudo apt-get autoclean
 
 查看安装文件
-dpkg -l|grep
+dpkg -l|grep  ***
 
 或者在官网下载android-studio的离线包
 解压unzip 然后mv 到 /opt/
@@ -45,19 +42,19 @@ sudo gedit /etc/profile
 ×××××××××××××××××××××××××××××不用看了！！××××××××××××××××××××××××××××××××××××××××××
 在后面增加三句话
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_51    不对
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH 
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 export CLASSPATH=$CLASSPATH:.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
 ××××××××××××××××××××××××××××××不用看了！！×××××××××××××××××××××××××××××××××××××××××
 上面的不对！！
 
 应该是
-export JDK_HOME = /opt/jdk1.8.00
+export JDK_HOME = /opt/jdk1.8.* 看你自己下载那个版本是什么
 然后再
 source /etc/profile
 再将系统默认的java改过来
 $ sudo update-alternatives --install /usr/bin/java java /opt/jdk1.×/bin/java 300
 $ sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.×/bin/javac 300
-$ sudo update-alternatives --config java 
+$ sudo update-alternatives --config java
 $ sudo update-alternatives --config javac
 检测版本
 $ java -version
@@ -69,7 +66,7 @@ sudo apt-get install lib32z1 lib32ncurses5  lib32stdc++6
 
 关于安卓虚拟机加速的问题
 装之前要在blos那里的configure打开一些Intel 硬件加速
-https://software.intel.com/zh-cn/android/articles/intel-hardware-accelerated-execution-manager 
+https://software.intel.com/zh-cn/android/articles/intel-hardware-accelerated-execution-manager
 可以在上面的网站上看看
 
 装下KVM就行了
@@ -80,3 +77,11 @@ $ sudo adduser linc libvirtd
 
 下面是检测是否安装成功
 $ sudo virsh -c qemu:///system list
+
+--------------------------------日常使用的小问题------------------------------------------
+
+layout 的xml文件:text 和 design 切换的时候有一个什么render fail 的exception
+这时候点击右上方的一个小机器人,把N改成其他数字就行了
+
+下载一些开源项目的话,有时候转化会不能run,可能就要在android SDK那里下载对应的sdk api版本
+少什么下载什么

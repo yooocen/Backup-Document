@@ -1,9 +1,8 @@
 #以下的东西在settings/keymap下可以自定义
 操作	                Linux
-Tab                     Tab
 智能提示completion	alt+/	
 自动修正	        alt+/  	
-注释	                Ctrl+/	 
+注释	                Ctrl+ /	 
 格式化代码refomat code	f10	
 清除无用包引用	        Alt+Ctrl+O	
 查找	                Ctrl+F	
