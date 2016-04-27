@@ -11,7 +11,10 @@ window->perspective->reset perspective
 ADT下载地址：https://dl.google.com/android/ADT-23.0.6.zip
 点击help菜单，找到下面的Install New Software并点击之后会弹出一个对话框，然后我们点击add,接下来弹出ADD对话框，然后我们再点击archive按钮。弹出要打开的文件，我们选择我们下载好的ADT，然后打开。然后next 。。finish。。
 
-
+/etc/host 添加一下信息
+74.125.237.1 dl-ssl.google.com
+下面是在线安装网址
+adt - https://dl.google.com/android/eclipse
 --------------------------------android studio----------------------------------------
 
 官网的做法

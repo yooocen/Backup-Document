@@ -27,4 +27,7 @@
 
 11.xampp 运行的是run文件 ,安装在/opt/lampp
 
-12.matlab /home/chen/MATLAB/R2016a
+12.octave
+sudo apt-get install octave
+
+

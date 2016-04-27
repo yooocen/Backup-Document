@@ -5,7 +5,7 @@ ctrl+^+<+>+下 光标左右移动 整行上下移动
 ctrl+shift+d复制粘贴一整行
 ctrl+l选中一整行
 ctrl+,打开设置
-ctrl+alt+h 启用听写模式
+ctrl+alt+h 启用拼写模式
 -----------------------------plugin's usage-------------------------------------------------
 
 安装插件之前必须要先sudo apt-get install npm
@@ -17,7 +17,7 @@ ctrl+alt+h 启用听写模式
 2. vim mode 老程序员专用傻逼编辑模式
 下面是一些我经常用的快捷建:
 
-具体可以用指令vimtuation
+具体可以用指令vimtutor
 h左l右k上j下
 x删除当前光标的字符
 i前插
@@ -27,9 +27,12 @@ ve选中一个单词
 v可视模式,按左右可以选中
 y拷贝
 p粘贴
-gg行首
+gg行首 加数字再gg可以跳到对应行
 dw删除单词
+ce删除顺便插入
 u撤销  ctrl+r取消上一次的撤销
+w以单词为单位进行移动
+r+字符 替换当前的字符
 ctrl+n 自动补全!!!!
 /查找
 
@@ -40,6 +43,13 @@ ctrl+n 自动补全!!!!
 
 http://blog.csdn.net/binyao02123202/article/details/20130891
 可以读一下上面的文档 
+或者直接在这个插件的使用文档那里有一个链接
 注意的是在atom上使用这个东西本地克隆的协议就应该是ssh,而不是https
 
 关于提交失败,可以用 git push origin master
+
+4.language-assembly 可以使汇编语言显示高亮
+汇编的编译器nasm安装可以是
+sudo apt-get install nasm
+sudo apt-get install dosbox
+这个dosbox需要装一个masm5.0.zip放到挂载的盘上才行
